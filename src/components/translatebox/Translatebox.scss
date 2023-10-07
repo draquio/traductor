@@ -1,11 +1,29 @@
 .ui.form textarea {
   resize: none !important;
   min-height: 140px;
-  background-color: red;
   font-size: 20px !important;
   &:focus{
     // border: 0;
     // box-shadow: none !important;
     border-color: black !important;
+  }
+}
+form{
+display: flex;
+flex-direction: column;
+width: 48%;
+  textarea{
+    height: 120px;
+    width: 100%;
+    border: 1px solid #e1e1e1;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    &:focus-visible{
+      outline: 0;
+    }
   }
 }

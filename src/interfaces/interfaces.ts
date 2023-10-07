@@ -4,6 +4,11 @@ export interface TranslateState {
     text: string
 }
 
+export interface LanguageState {
+    id: idstring
+    lan: string
+}
+
 
 export interface Props {
     children: JSX.Element | JSX.Element[]

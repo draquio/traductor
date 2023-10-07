@@ -1,10 +1,7 @@
-import {useContext} from "react"
 import { ENV } from "../utils/constants";
-import { TranslateContext } from "../context/TranslateContext";
-
 
 export class Translate {
-  async translatetext(texttotranslate: string, Language = "EN") {
+  async translatetext(texttotranslate: string, Language:string = "EN") {
     const url = `${ENV.Api_url}?to%5B0%5D=${Language}&api-version=3.0&profanityAction=NoAction&textType=plain`;
     const options: RequestInit = {
       method: "POST",

@@ -1,14 +1,17 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { LanguageContext } from "../../context/LanguageContext";
 import "./MenuLanguage.scss"
 
 export const MenuLanguage = () => {
+  const { getLanguage } = useContext(LanguageContext);
   const [language, setLanguage] = useState("");
   const handleClick = (lang: string = "EN") => {
     setLanguage(lang);
-    console.log(lang);
+    getLanguage(lang)
   };
   return (
     <div className="languages_container">
+      <p className="language_title">Traducir a:</p>
       <p
         className={`language ${language === "ES" ? "active" : ""}`}
         onClick={() => {
