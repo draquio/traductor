@@ -1,0 +1,16 @@
+@import "../../scss/index.scss";
+.footer_container{
+    background-color: $main_color;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        // font-weight: bold;
+        color: $text_color;
+        text-decoration: none;
+        text-align: center;
+        margin: 0 10px;
+    }
+}

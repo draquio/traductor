@@ -1,10 +1,22 @@
-
+@import "../scss/index.scss";
 .translate_container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-    form{
-        width: 48%;
-    }
+    position: relative;
 }
+
+@media (max-width: $medium_responsive) {
+    .translate_container{
+        flex-direction: column;
+        gap: 10px;
+        .translate_form{
+            width: 100%;
+            align-items: center;
+        }
+        .result_box_container{
+            width: 100%;
+        }
+    }
+  }

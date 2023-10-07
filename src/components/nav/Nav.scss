@@ -1,6 +1,8 @@
+@import "../../scss/index.scss";
 .nav_content{
     width: 100%;
-    background-color: #d4d4d4;
+    background-color: $main_color;
+    color:$text_color;
     .nav_class{
         max-width: 1200px;
         display: flex;
@@ -9,5 +11,14 @@
         align-items: center;
         padding: 10px 15px;
         box-sizing: border-box;
+        .logo{
+            width: 180px;
+        }
     }
 }
+
+@media (max-width: $medium_responsive) {
+    .nav_content .nav_class{
+        justify-content: center;
+    }
+  }

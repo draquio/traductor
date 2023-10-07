@@ -1,8 +1,23 @@
-.container{
+@import "../scss/index.scss";
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .container {
     max-width: 1200px;
-    // background-color: rgb(189, 189, 189);
+    width: 100%;
     margin: 20px auto;
     box-sizing: border-box;
     padding: 15px;
     min-height: 200px;
+  }
+  .footer{
+    margin-top: auto;
+  }
+}
+
+@media (max-width: $medium_responsive) {
+  .main .container {
+    padding: 5px;
+  }
 }

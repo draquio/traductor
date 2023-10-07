@@ -6,7 +6,8 @@ export interface TranslateState {
 
 export interface LanguageState {
     id: idstring
-    lan: string
+    lan: string,
+    word: string,
 }
 
 

@@ -1,24 +1,37 @@
-.ui.form {
-  .resultbox {
-    background-color: #f1efef !important;
-    color: black;
-    font-size: 15px;
+@import "../../scss/index.scss";
+.result_box_container {
+  width: 48%;
+  position: relative;
+  .result_box {
+    width: 100%;
+    height: 120px;
+    background: $main_color;
+    color: $text_color;
+    border: 1px solid #e1e1e1;
+    resize: none;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 10px;
     &::placeholder {
-      color: #8f8f8f;
-      font-size: 20px;
+      color: $text_color;
     }
   }
-}
-
-textarea {
-  width: 48%;
-  height: 120px;
-
-  border: 1px solid #e1e1e1;
-  resize: none;
-  box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  .copy_text_area{
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 10px;
+    top: 9px;
+    color: $text_color;
+    padding: 5px;
+    cursor: pointer;
+    transition: 1s ease all;
+    border-radius: 50%;
+    &:hover {
+      background-color: #ffffff57;
+      border-radius: 50%;
+    }
+  }
 }

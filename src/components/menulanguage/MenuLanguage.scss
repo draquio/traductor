@@ -1,14 +1,17 @@
+@import "../../scss/index.scss";
 .languages_container {
   display: flex;
   gap: 10px;
   justify-content: center;
   align-items: baseline;
+  flex-wrap: wrap;
   margin-bottom: 15px;
   .language_title {
     font-weight: bold;
     font-size: 15px;
   }
   .language {
+    color: $main_color;
     padding: 5px;
     vertical-align: middle;
     border-radius: 5px;
@@ -18,12 +21,8 @@
     cursor: pointer;
     transition: 0.3s ease all;
     &.active {
-      background: #e1e1e1;
+      background: #fdecec;
       transition: 0.3s ease all;
-    }
-    &:hover {
-      background: #f1efef;
-
     }
   }
 }

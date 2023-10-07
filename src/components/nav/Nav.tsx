@@ -1,10 +1,9 @@
-import React from 'react'
 import "./Nav.scss"
-const Nav:React.FC = () => {
+const Nav = () => {
   return (
     <div className="nav_content">
       <nav className="nav_class">
-        <p>Logo</p>
+        <img src="/logo.png" alt="Logo Traductor" className="logo" />
       </nav>
     </div>
   )

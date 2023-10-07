@@ -5,6 +5,7 @@ import LanguageReducer from "./LanguageReducer";
 const initial_state: LanguageState = {
   id: crypto.randomUUID(),
   lan: "EN",
+  word: "Translation",
 };
 interface Props {
   children: JSX.Element | JSX.Element[]
@@ -12,8 +13,9 @@ interface Props {
 
 export const LanguageProvider = ({ children }: Props) => {
   const [languageState, dispatch] = useReducer(LanguageReducer, initial_state);
-  const getLanguage = (lan: string) => {
-    dispatch({ type: "getLanguage", payload: lan });
+  const getLanguage = (lan: string, word: string) => {
+    const id = crypto.randomUUID();
+    dispatch({ type: "getLanguage", payload: {id,lan,word} });
   };
 
   return (

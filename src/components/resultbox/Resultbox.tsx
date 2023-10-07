@@ -1,34 +1,30 @@
-import { useContext, useState, useEffect } from "react";
-// import { Form, TextArea } from "semantic-ui-react";
+import { useContext, useRef } from "react";
 import { TranslateContext } from "../../context/TranslateContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import "./ResultBox.scss";
+import { AiOutlineCopy } from 'react-icons/ai';
 
 const Resultbox = () => {
-  const [translatiodefault, setTranslatioDefault] = useState("Translation");
-
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
   const { translateState } = useContext(TranslateContext);
   const { languageState } = useContext(LanguageContext);
-  const language = languageState.lan;
-  useEffect(() => {
-    if (language === "ES") {
-      setTranslatioDefault("Traducción");
-    } else if (language === "EN") {
-      setTranslatioDefault("Translation");
-    } else {
-      setTranslatioDefault("Traduction");
+  const language = languageState.word;
+  const CopyTextArea = () => {
+    if (translateState.text != "") {
+      navigator.clipboard.writeText(translateState.text);
     }
-  }, [language]);
-
+  }
   return (
-    // <Form>
+    <div className="result_box_container">
       <textarea
-        className="resultbox"
+      ref={textareaRef}
+        className="result_box"
         disabled
-        placeholder={translatiodefault}
+        placeholder={language}
         value={translateState.text}
       />
-    // </Form>
+      <AiOutlineCopy className="copy_text_area" onClick={CopyTextArea} />
+    </div>
   );
 };
 export default Resultbox;

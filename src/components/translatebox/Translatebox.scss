@@ -1,18 +1,13 @@
-.ui.form textarea {
-  resize: none !important;
-  min-height: 140px;
-  font-size: 20px !important;
-  &:focus{
-    // border: 0;
-    // box-shadow: none !important;
-    border-color: black !important;
-  }
+@import "../../scss/index.scss";
+.isLoading {
+  position: absolute;
 }
-form{
-display: flex;
-flex-direction: column;
-width: 48%;
-  textarea{
+.translate_form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 48%;
+  .translate_box {
     height: 120px;
     width: 100%;
     border: 1px solid #e1e1e1;
@@ -20,10 +15,62 @@ width: 48%;
     box-sizing: border-box;
     padding: 10px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 10px;
-    &:focus-visible{
+    &:focus-visible {
       outline: 0;
     }
   }
+
+  .translate_button {
+    display: block;
+    width: 120px;
+    padding: 10px 15px;
+    background-color: $main_color;
+    color: $text_color;
+    border: 1px solid $text_color;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.6s ease all;
+    font-weight: bold;
+    p {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    &:hover {
+      background-color: #cf3f56;
+    }
+    .loading_button {
+      animation: rotarInfinito 2s linear infinite;
+    }
+  }
+
+  .clean_text_area {
+    position: absolute;
+    width: 20px;
+    height: auto;
+    right: 10px;
+    top: 9px;
+    color: $main_color;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+    border-radius: 50%;
+    &:hover {
+      background-color: #fdecec;
+    }
+  }
 }
+
+@keyframes rotarInfinito {
+  from {
+    transform: rotate(0deg); 
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
