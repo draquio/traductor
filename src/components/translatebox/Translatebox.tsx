@@ -64,10 +64,11 @@ const Translatebox: React.FC = () => {
       ) : (
         ""
       )}
+      <div className="translate_box">
         <textarea
           disabled={isLoading}
           placeholder="Agregar Texto"
-          className="translate_box"
+          className="text_area_box"
           value={text}
           onChange={handleChange}
           onKeyPress={handleKeyPress}
@@ -76,7 +77,7 @@ const Translatebox: React.FC = () => {
         <button disabled={isLoading} className="translate_button" type="submit">
           <p>{ isLoading ? <TbLoader className="loading_button" /> : <MdTranslate />}Traducir </p>
         </button>
-
+        </div>
       </form>
     </>
   );
