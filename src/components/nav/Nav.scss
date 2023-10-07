@@ -1,0 +1,13 @@
+.nav_content{
+    width: 100%;
+    background-color: #d4d4d4;
+    .nav_class{
+        max-width: 1200px;
+        display: flex;
+        margin: auto;
+        height: 70px;
+        align-items: center;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+}

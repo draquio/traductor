@@ -1,0 +1,11 @@
+.ui.form {
+  .resultbox {
+    background-color: #f1efef !important;
+    color: black;
+    font-size: 15px;
+    &::placeholder {
+      color: #8f8f8f;
+      font-size: 20px;
+    }
+  }
+}
