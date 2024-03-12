@@ -12,38 +12,40 @@ export const MenuLanguage = () => {
   return (
     <div className="languages_container">
       <p className="language_title">Traducir a:</p>
-      <p
-        className={`language ${language === "EN" ? "active" : ""}`}
-        onClick={() => {
-          handleClick("EN", "Translation");
-        }}
-      >
-        Inglés
-      </p>
-      <p
-        className={`language ${language === "ES" ? "active" : ""}`}
-        onClick={() => {
-          handleClick("ES", "Traducción");
-        }}
-      >
-        Español
-      </p>
-      <p
-        className={`language ${language === "FR" ? "active" : ""}`}
-        onClick={() => {
-          handleClick("FR", "Traduction");
-        }}
-      >
-        Francés
-      </p>
-      <p
-        className={`language ${language === "IT" ? "active" : ""}`}
-        onClick={() => {
-          handleClick("IT", "Traduzione");
-        }}
-      >
-        Italiano
-      </p>
+      <div className="languages_list">
+        <p
+          className={`language ${language === "EN" ? "active" : ""}`}
+          onClick={() => {
+            handleClick("EN", "Translation");
+          }}
+        >
+          Inglés
+        </p>
+        <p
+          className={`language ${language === "ES" ? "active" : ""}`}
+          onClick={() => {
+            handleClick("ES", "Traducción");
+          }}
+        >
+          Español
+        </p>
+        <p
+          className={`language ${language === "FR" ? "active" : ""}`}
+          onClick={() => {
+            handleClick("FR", "Traduction");
+          }}
+        >
+          Francés
+        </p>
+        <p
+          className={`language ${language === "IT" ? "active" : ""}`}
+          onClick={() => {
+            handleClick("IT", "Traduzione");
+          }}
+        >
+          Italiano
+        </p>
+      </div>
     </div>
   );
 };

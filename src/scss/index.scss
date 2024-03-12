@@ -1,9 +1,9 @@
 @import "./elements.scss";
-//Colors
-// $main_color: #da3426;
+@import "./animations.scss";
 $main_color: #EB455F;
 $text_color: white;
 $text_dark: #5f5a5a;
 
 // Resposive queries
-$medium_responsive: 700px;
+$medium_responsive: 900px;
+$small_responsive: 350px;
