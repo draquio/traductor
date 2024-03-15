@@ -12,36 +12,17 @@
     font-size: 15px;
   }
   .languages_list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    .language {
-      color: $main_color;
-      padding: 5px;
-      vertical-align: middle;
-      border-radius: 5px;
-      margin: 5px 0px;
-      width: 65px;
-      text-align: center;
-      cursor: pointer;
-      transition: 0.3s ease all;
-      &.active {
-        background: #eb455f36;
-        transition: 0.3s ease all;
-      }
-    }
+    width: 350px;
   }
 }
-
 
 @media (max-width: $small_responsive) {
   .languages_container {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    .languages_list{
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: 20px;
+    .languages_list {
+      width: 100% ;
     }
   }
 }

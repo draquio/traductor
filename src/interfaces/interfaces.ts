@@ -14,3 +14,9 @@ export interface LanguageState {
 export interface Props {
     children: JSX.Element | JSX.Element[]
 }
+
+export interface LanguageMock {
+    acronym: string,
+    name: string,
+    nativename: string,
+}

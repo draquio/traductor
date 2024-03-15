@@ -1,0 +1,677 @@
+[
+    {
+        "acronym": "af",
+        "name": "Afrikáans",
+        "nativename": "Afrikaans"
+    },
+    {
+        "acronym": "am",
+        "name": "Amárico",
+        "nativename": "አማርኛ"
+    },
+    {
+        "acronym": "ar",
+        "name": "Árabe",
+        "nativename": "العربية"
+    },
+    {
+        "acronym": "as",
+        "name": "Asamés",
+        "nativename": "অসমীয়া"
+    },
+    {
+        "acronym": "az",
+        "name": "Azerbaiyano",
+        "nativename": "Azərbaycan"
+    },
+    {
+        "acronym": "ba",
+        "name": "Baskir",
+        "nativename": "Bashkir"
+    },
+    {
+        "acronym": "bg",
+        "name": "Búlgaro",
+        "nativename": "Български"
+    },
+    {
+        "acronym": "bho",
+        "name": "Bhojpuri",
+        "nativename": "Bhojpuri"
+    },
+    {
+        "acronym": "bn",
+        "name": "Bengalí",
+        "nativename": "বাংলা"
+    },
+    {
+        "acronym": "bo",
+        "name": "Tibetano",
+        "nativename": "བོད་སྐད་"
+    },
+    {
+        "acronym": "brx",
+        "name": "Bodo",
+        "nativename": "बड़ो"
+    },
+    {
+        "acronym": "bs",
+        "name": "Bosnio",
+        "nativename": "Bosnian"
+    },
+    {
+        "acronym": "ca",
+        "name": "Catalán",
+        "nativename": "Català"
+    },
+    {
+        "acronym": "cs",
+        "name": "Checo",
+        "nativename": "Čeština"
+    },
+    {
+        "acronym": "cy",
+        "name": "Galés",
+        "nativename": "Cymraeg"
+    },
+    {
+        "acronym": "da",
+        "name": "Danés",
+        "nativename": "Dansk"
+    },
+    {
+        "acronym": "de",
+        "name": "Alemán",
+        "nativename": "Deutsch"
+    },
+    {
+        "acronym": "doi",
+        "name": "Dogri",
+        "nativename": "Dogri"
+    },
+    {
+        "acronym": "dsb",
+        "name": "Bajo Sorbio",
+        "nativename": "Dolnoserbšćina"
+    },
+    {
+        "acronym": "dv",
+        "name": "Divehi",
+        "nativename": "ދިވެހިބަސް"
+    },
+    {
+        "acronym": "el",
+        "name": "Griego",
+        "nativename": "Ελληνικά"
+    },
+    {
+        "acronym": "en",
+        "name": "Inglés",
+        "nativename": "English"
+    },
+    {
+        "acronym": "es",
+        "name": "Español",
+        "nativename": "Español"
+    },
+    {
+        "acronym": "et",
+        "name": "Estonio",
+        "nativename": "Eesti"
+    },
+    {
+        "acronym": "eu",
+        "name": "Euskera",
+        "nativename": "Euskara"
+    },
+    {
+        "acronym": "fa",
+        "name": "Persa",
+        "nativename": "فارسی"
+    },
+    {
+        "acronym": "fi",
+        "name": "Finés",
+        "nativename": "Suomi"
+    },
+    {
+        "acronym": "fil",
+        "name": "Filipino",
+        "nativename": "Filipino"
+    },
+    {
+        "acronym": "fj",
+        "name": "Fiyiano",
+        "nativename": "Na Vosa Vakaviti"
+    },
+    {
+        "acronym": "fo",
+        "name": "Feroés",
+        "nativename": "Føroyskt"
+    },
+    {
+        "acronym": "fr",
+        "name": "Francés",
+        "nativename": "Français"
+    },
+    {
+        "acronym": "fr-CA",
+        "name": "Francés (Canadá)",
+        "nativename": "Français (Canada)"
+    },
+    {
+        "acronym": "ga",
+        "name": "Irlandés",
+        "nativename": "Gaeilge"
+    },
+    {
+        "acronym": "gl",
+        "name": "Gallego",
+        "nativename": "Galego"
+    },
+    {
+        "acronym": "gom",
+        "name": "Konkani",
+        "nativename": "Konkani"
+    },
+    {
+        "acronym": "gu",
+        "name": "Guyaratí",
+        "nativename": "ગુજરાતી"
+    },
+    {
+        "acronym": "ha",
+        "name": "Hausa",
+        "nativename": "Hausa"
+    },
+    {
+        "acronym": "he",
+        "name": "Hebreo",
+        "nativename": "עברית"
+    },
+    {
+        "acronym": "hi",
+        "name": "Hindi",
+        "nativename": "हिन्दी"
+    },
+    {
+        "acronym": "hne",
+        "name": "Chhattisgarhi",
+        "nativename": "Chhattisgarhi"
+    },
+    {
+        "acronym": "hr",
+        "name": "Croata",
+        "nativename": "Hrvatski"
+    },
+    {
+        "acronym": "hsb",
+        "name": "Alto Sorbio",
+        "nativename": "Hornjoserbšćina"
+    },
+    {
+        "acronym": "ht",
+        "name": "Criollo Haitiano",
+        "nativename": "Haitian Creole"
+    },
+    {
+        "acronym": "hu",
+        "name": "Húngaro",
+        "nativename": "Magyar"
+    },
+    {
+        "acronym": "hy",
+        "name": "Armenio",
+        "nativename": "Հայերեն"
+    },
+    {
+        "acronym": "id",
+        "name": "Indonesio",
+        "nativename": "Indonesia"
+    },
+    {
+        "acronym": "ig",
+        "name": "Igbo",
+        "nativename": "Ásụ̀sụ́ Ìgbò"
+    },
+    {
+        "acronym": "ikt",
+        "name": "Inuinnaqtun",
+        "nativename": "Inuinnaqtun"
+    },
+    {
+        "acronym": "is",
+        "name": "Islandés",
+        "nativename": "Íslenska"
+    },
+    {
+        "acronym": "it",
+        "name": "Italiano",
+        "nativename": "Italiano"
+    },
+    {
+        "acronym": "iu",
+        "name": "Inuktitut",
+        "nativename": "ᐃᓄᒃᑎᑐᑦ"
+    },
+    {
+        "acronym": "iu-Latn",
+        "name": "Inuktitut (Latin)",
+        "nativename": "Inuktitut (Latin)"
+    },
+    {
+        "acronym": "ja",
+        "name": "Japonés",
+        "nativename": "日本語"
+    },
+    {
+        "acronym": "ka",
+        "name": "Georgiano",
+        "nativename": "ქართული"
+    },
+    {
+        "acronym": "kk",
+        "name": "Kazajo",
+        "nativename": "Қазақ Тілі"
+    },
+    {
+        "acronym": "km",
+        "name": "Jemer",
+        "nativename": "ខ្មែរ"
+    },
+    {
+        "acronym": "kmr",
+        "name": "Kurdo (septentrional)",
+        "nativename": "Kurdî (Bakur)"
+    },
+    {
+        "acronym": "kn",
+        "name": "Canarés",
+        "nativename": "ಕನ್ನಡ"
+    },
+    {
+        "acronym": "ko",
+        "name": "Coreano",
+        "nativename": "한국어"
+    },
+    {
+        "acronym": "ks",
+        "name": "Kashmiri",
+        "nativename": "کٲشُر"
+    },
+    {
+        "acronym": "ku",
+        "name": "Kurdo (Centro)",
+        "nativename": "Kurdî (Navîn)"
+    },
+    {
+        "acronym": "ky",
+        "name": "Kirguís",
+        "nativename": "Кыргызча"
+    },
+    {
+        "acronym": "ln",
+        "name": "Lingala",
+        "nativename": "Lingála"
+    },
+    {
+        "acronym": "lo",
+        "name": "Lao",
+        "nativename": "ລາວ"
+    },
+    {
+        "acronym": "lt",
+        "name": "Lituano",
+        "nativename": "Lietuvių"
+    },
+    {
+        "acronym": "lug",
+        "name": "Ganda",
+        "nativename": "Ganda"
+    },
+    {
+        "acronym": "lv",
+        "name": "Letón",
+        "nativename": "Latviešu"
+    },
+    {
+        "acronym": "lzh",
+        "name": "Chinese (Literary)",
+        "nativename": "中文 (文言文)"
+    },
+    {
+        "acronym": "mai",
+        "name": "Maithili",
+        "nativename": "Maithili"
+    },
+    {
+        "acronym": "mg",
+        "name": "Malgache",
+        "nativename": "Malagasy"
+    },
+    {
+        "acronym": "mi",
+        "name": "Maorí",
+        "nativename": "Te Reo Māori"
+    },
+    {
+        "acronym": "mk",
+        "name": "Macedonio",
+        "nativename": "Македонски"
+    },
+    {
+        "acronym": "ml",
+        "name": "Malayalam",
+        "nativename": "മലയാളം"
+    },
+    {
+        "acronym": "mn-Cyrl",
+        "name": "Mongolian (Cyrillic)",
+        "nativename": "Mongolian (Cyrillic)"
+    },
+    {
+        "acronym": "mn-Mong",
+        "name": "Mongolian (Traditional)",
+        "nativename": "ᠮᠣᠩᠭᠣᠯ ᠬᠡᠯᠡ"
+    },
+    {
+        "acronym": "mni",
+        "name": "Manipuri",
+        "nativename": "ꯃꯩꯇꯩꯂꯣꯟ"
+    },
+    {
+        "acronym": "mr",
+        "name": "Maratí",
+        "nativename": "मराठी"
+    },
+    {
+        "acronym": "ms",
+        "name": "Malayo",
+        "nativename": "Melayu"
+    },
+    {
+        "acronym": "mt",
+        "name": "Maltés",
+        "nativename": "Malti"
+    },
+    {
+        "acronym": "mww",
+        "name": "Hmong",
+        "nativename": "Hmong Daw"
+    },
+    {
+        "acronym": "my",
+        "name": "Birmano",
+        "nativename": "မြန်မာ"
+    },
+    {
+        "acronym": "nb",
+        "name": "Noruego Bokmal",
+        "nativename": "Norsk Bokmål"
+    },
+    {
+        "acronym": "ne",
+        "name": "Nepalí",
+        "nativename": "नेपाली"
+    },
+    {
+        "acronym": "nl",
+        "name": "Neerlandés",
+        "nativename": "Nederlands"
+    },
+    {
+        "acronym": "nso",
+        "name": "Sesotho sa Leboa",
+        "nativename": "Sesotho sa Leboa"
+    },
+    {
+        "acronym": "nya",
+        "name": "Nyanja",
+        "nativename": "Nyanja"
+    },
+    {
+        "acronym": "or",
+        "name": "Oriya",
+        "nativename": "ଓଡ଼ିଆ"
+    },
+    {
+        "acronym": "otq",
+        "name": "Otomí Querétaro",
+        "nativename": "Hñähñu"
+    },
+    {
+        "acronym": "pa",
+        "name": "Punyabí",
+        "nativename": "ਪੰਜਾਬੀ"
+    },
+    {
+        "acronym": "pl",
+        "name": "Polaco",
+        "nativename": "Polski"
+    },
+    {
+        "acronym": "prs",
+        "name": "Darí",
+        "nativename": "دری"
+    },
+    {
+        "acronym": "ps",
+        "name": "Pastún",
+        "nativename": "پښتو"
+    },
+    {
+        "acronym": "pt",
+        "name": "Portugués (Brasil)",
+        "nativename": "Português (Brasil)"
+    },
+    {
+        "acronym": "pt-PT",
+        "name": "Portugués (Portugal)",
+        "nativename": "Português (Portugal)"
+    },
+    {
+        "acronym": "ro",
+        "name": "Rumano",
+        "nativename": "Română"
+    },
+    {
+        "acronym": "ru",
+        "name": "Ruso",
+        "nativename": "Русский"
+    },
+    {
+        "acronym": "run",
+        "name": "Rundi",
+        "nativename": "Rundi"
+    },
+    {
+        "acronym": "rw",
+        "name": "Kinyarwanda",
+        "nativename": "Kinyarwanda"
+    },
+    {
+        "acronym": "sd",
+        "name": "Sindhi",
+        "nativename": "سنڌي"
+    },
+    {
+        "acronym": "si",
+        "name": "Cingalés",
+        "nativename": "සිංහල"
+    },
+    {
+        "acronym": "sk",
+        "name": "Eslovaco",
+        "nativename": "Slovenčina"
+    },
+    {
+        "acronym": "sl",
+        "name": "Esloveno",
+        "nativename": "Slovenščina"
+    },
+    {
+        "acronym": "sm",
+        "name": "Samoano",
+        "nativename": "Gagana Sāmoa"
+    },
+    {
+        "acronym": "sn",
+        "name": "Shona",
+        "nativename": "chiShona"
+    },
+    {
+        "acronym": "so",
+        "name": "Somalí",
+        "nativename": "Soomaali"
+    },
+    {
+        "acronym": "sq",
+        "name": "Albanés",
+        "nativename": "Shqip"
+    },
+    {
+        "acronym": "sr-Cyrl",
+        "name": "Serbio (Cirílico)",
+        "nativename": "Српски (ћирилица)"
+    },
+    {
+        "acronym": "sr-Latn",
+        "name": "Serbio (Latino)",
+        "nativename": "Srpski (latinica)"
+    },
+    {
+        "acronym": "st",
+        "name": "Sesotho",
+        "nativename": "Sesotho"
+    },
+    {
+        "acronym": "sv",
+        "name": "Sueco",
+        "nativename": "Svenska"
+    },
+    {
+        "acronym": "sw",
+        "name": "Suajili",
+        "nativename": "Kiswahili"
+    },
+    {
+        "acronym": "ta",
+        "name": "Tamil",
+        "nativename": "தமிழ்"
+    },
+    {
+        "acronym": "te",
+        "name": "Telugu",
+        "nativename": "తెలుగు"
+    },
+    {
+        "acronym": "th",
+        "name": "Tailandés",
+        "nativename": "ไทย"
+    },
+    {
+        "acronym": "ti",
+        "name": "Tigriña",
+        "nativename": "ትግር"
+    },
+    {
+        "acronym": "tk",
+        "name": "Turcomano",
+        "nativename": "Türkmen Dili"
+    },
+    {
+        "acronym": "tlh-Latn",
+        "name": "Klingon (Latino)",
+        "nativename": "Klingon (Latin)"
+    },
+    {
+        "acronym": "tlh-Piqd",
+        "name": "Klingon (pIqaD)",
+        "nativename": "Klingon (pIqaD)"
+    },
+    {
+        "acronym": "tn",
+        "name": "Setswana",
+        "nativename": "Setswana"
+    },
+    {
+        "acronym": "to",
+        "name": "Tongano",
+        "nativename": "Lea Fakatonga"
+    },
+    {
+        "acronym": "tr",
+        "name": "Turco",
+        "nativename": "Türkçe"
+    },
+    {
+        "acronym": "tt",
+        "name": "Tártaro",
+        "nativename": "Татар"
+    },
+    {
+        "acronym": "ty",
+        "name": "Tahitiano",
+        "nativename": "Reo Tahiti"
+    },
+    {
+        "acronym": "ug",
+        "name": "Uigur",
+        "nativename": "ئۇيغۇرچە"
+    },
+    {
+        "acronym": "uk",
+        "name": "Ucraniano",
+        "nativename": "Українська"
+    },
+    {
+        "acronym": "ur",
+        "name": "Urdu",
+        "nativename": "اردو"
+    },
+    {
+        "acronym": "uz",
+        "name": "Uzbeko",
+        "nativename": "Uzbek (Latin)"
+    },
+    {
+        "acronym": "vi",
+        "name": "Vietnamita",
+        "nativename": "Tiếng Việt"
+    },
+    {
+        "acronym": "xh",
+        "name": "Xhosa",
+        "nativename": "isiXhosa"
+    },
+    {
+        "acronym": "yo",
+        "name": "Yoruba",
+        "nativename": "Èdè Yorùbá"
+    },
+    {
+        "acronym": "yua",
+        "name": "Maya Yucateco",
+        "nativename": "Yucatec Maya"
+    },
+    {
+        "acronym": "yue",
+        "name": "Cantonés (Tradicional)",
+        "nativename": "粵語 (繁體)"
+    },
+    {
+        "acronym": "zh-Hans",
+        "name": "Chino (Simplificado)",
+        "nativename": "中文 (简体)"
+    },
+    {
+        "acronym": "zh-Hant",
+        "name": "Chino (Tradicional)",
+        "nativename": "繁體中文 (繁體)"
+    },
+    {
+        "acronym": "zu",
+        "name": "Zulú",
+        "nativename": "Isi-Zulu"
+    }
+]
