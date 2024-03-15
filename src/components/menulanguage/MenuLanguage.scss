@@ -13,6 +13,10 @@
   }
   .languages_list {
     width: 350px;
+    .ui.selection.active.dropdown, .ui.selection.active.dropdown .menu {
+      scrollbar-width: thin;
+      scrollbar-color: rgb(235 69 95 / 62%) rgb(255 255 255 / 0%);
+    }
   }
 }
 
@@ -22,7 +26,10 @@
     align-items: center;
     gap: 0;
     .languages_list {
-      width: 100% ;
+      width: 100%;
+      .ui.selection.active.dropdown, .ui.selection.active.dropdown .menu {
+        scrollbar-width: none;
+      }
     }
   }
 }
