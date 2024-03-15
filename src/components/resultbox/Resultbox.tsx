@@ -2,11 +2,11 @@ import { useContext, useRef } from "react";
 import { TranslateContext } from "../../context/TranslateContext";
 import { LanguageContext } from "../../context/LanguageContext";
 import "./ResultBox.scss";
-import { AiOutlineCopy } from "react-icons/ai";
+import { IoMdVolumeHigh, IoIosCopy } from "react-icons/io";
 
 const Resultbox = () => {
   const textareaRef = useRef<HTMLTextAreaElement | null>(null);
-  const { translateState } = useContext(TranslateContext);
+  const { translateState } = useContext(TranslateContext);  
   const { languageState } = useContext(LanguageContext);
   const language = languageState.word;
   const CopyTextArea = () => {
@@ -14,6 +14,14 @@ const Resultbox = () => {
       navigator.clipboard.writeText(translateState.text);
     }
   };
+  const speakText = () => {
+    if (window.speechSynthesis) {
+      const utterance = new SpeechSynthesisUtterance(translateState.text);
+      utterance.lang = languageState.lan;
+      window.speechSynthesis.speak(utterance);
+    }
+  };
+
   return (
     <div className="result_box_container">
       <div className="result_box">
@@ -25,7 +33,8 @@ const Resultbox = () => {
           value={translateState.text}
         />
       </div>
-      <AiOutlineCopy className="copy_text_area" onClick={CopyTextArea} />
+      <IoIosCopy className="copy_text_area" onClick={CopyTextArea} />
+      <IoMdVolumeHigh className="copy_text_area icon_micro" onClick={speakText}/>
     </div>
   );
 };

@@ -3,7 +3,8 @@ import Translate from "../../services/Translate";
 import "./Translatebox.scss";
 import { TranslateContext } from "../../context/TranslateContext";
 import { LanguageContext } from "../../context/LanguageContext";
-import { AiOutlineClose } from "react-icons/ai";
+import { IoMdClose } from "react-icons/io";
+
 import { TbLoader } from "react-icons/tb";
 import { MdTranslate } from "react-icons/md";
 
@@ -73,7 +74,7 @@ const Translatebox: React.FC = () => {
           onChange={handleChange}
           onKeyPress={handleKeyPress}
         />
-        <AiOutlineClose className="clean_text_area" onClick={CleanTextArea} />
+        <IoMdClose className="clean_text_area" onClick={CleanTextArea} />
         <button disabled={isLoading} className="translate_button" type="submit">
           <p>{ isLoading ? <TbLoader className="loading_button" /> : <MdTranslate />}Traducir </p>
         </button>

@@ -42,6 +42,10 @@
     &:hover {
       background-color: #ffffff57;
       border-radius: 50%;
+      transition: 0.3s ease all;
+    }
+    &.icon_micro{
+      top: 40px;
     }
   }
 }
