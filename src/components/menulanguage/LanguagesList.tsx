@@ -10,7 +10,7 @@ import { LanguageContext } from "../../context/LanguageContext";
 export const LanguagesList = () => {
   const { getLanguage } = useContext(LanguageContext);
   const CountryListLanguages = MapLanguages(LanguagesListMocks);
-  const SelectLanguage = (e: React.SyntheticEvent<HTMLElement>, data: DropdownProps) => {
+  const SelectLanguage = (_: React.SyntheticEvent<HTMLElement>, data: DropdownProps) => {
     if (typeof data.value === 'string') {
       getLanguage(data.value, "translation");
     }
