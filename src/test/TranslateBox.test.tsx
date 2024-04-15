@@ -6,7 +6,6 @@ import {
   waitFor,
   cleanup,
 } from "@testing-library/react";
-import userEvent from '@testing-library/user-event';
 import Translatebox from "../components/translatebox/Translatebox";
 import { LanguageProvider } from "../context/LanguageProvider";
 import { TranslateProvider } from "../context/TranslateProvider";
@@ -49,7 +48,6 @@ describe("Testing TranslateBox Component", () => {
     const loader = screen.getByLabelText("loader");
     expect(loader).toBeDefined();
     const resultbox = screen.getByLabelText("result_box");
-    expect(resultbox.value)
     await waitFor(()=>{
     })
     // expect(translatebutton).toBeDefined();
