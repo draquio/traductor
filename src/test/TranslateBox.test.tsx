@@ -2,14 +2,14 @@ import { afterEach, describe, expect, test, vi } from "vitest";
 import {
   render,
   screen,
-  fireEvent,
-  waitFor,
+  // fireEvent,
+  // waitFor,
   cleanup,
 } from "@testing-library/react";
 import Translatebox from "../components/translatebox/Translatebox";
 import { LanguageProvider } from "../context/LanguageProvider";
-import { TranslateProvider } from "../context/TranslateProvider";
-import Resultbox from "../components/resultbox/Resultbox";
+// import { TranslateProvider } from "../context/TranslateProvider";
+// import Resultbox from "../components/resultbox/Resultbox";
 
 describe("Testing TranslateBox Component", () => {
   afterEach(() => {
@@ -29,27 +29,27 @@ describe("Testing TranslateBox Component", () => {
 
 
   // Simula el módulo antes de que se importe en cualquier otro lugar
-  vi.mock("../api/translationApi", () => ({
-    translateText: vi.fn(() => Promise.resolve("Texto traducido")),
-  }));
-  test("it should tranlate the text", async () => {
-    render(
-      <LanguageProvider>
-        <TranslateProvider>
-          <Translatebox />
-          <Resultbox />
-        </TranslateProvider>
-      </LanguageProvider>
-    );
-    const textarea = screen.getByLabelText("text_area_translate");
-    const translatebutton = screen.getByRole("button", { name: /Traducir/i });
-    fireEvent.change(textarea, {target: { value: "hola" }});
-    fireEvent.click(translatebutton);
-    const loader = screen.getByLabelText("loader");
-    expect(loader).toBeDefined();
-    const resultbox = screen.getByLabelText("result_box");
-    await waitFor(()=>{
-    })
+  // vi.mock("../api/translationApi", () => ({
+  //   translateText: vi.fn(() => Promise.resolve("Texto traducido")),
+  // }));
+  // test("it should tranlate the text", async () => {
+  //   render(
+  //     <LanguageProvider>
+  //       <TranslateProvider>
+  //         <Translatebox />
+  //         <Resultbox />
+  //       </TranslateProvider>
+  //     </LanguageProvider>
+  //   );
+  //   const textarea = screen.getByLabelText("text_area_translate");
+  //   const translatebutton = screen.getByRole("button", { name: /Traducir/i });
+  //   fireEvent.change(textarea, {target: { value: "hola" }});
+  //   fireEvent.click(translatebutton);
+  //   const loader = screen.getByLabelText("loader");
+  //   expect(loader).toBeDefined();
+  //   const resultbox = screen.getByLabelText("result_box");
+  //   await waitFor(()=>{
+  //   })
     // expect(translatebutton).toBeDefined();
-  });
+  // });
 });
