@@ -15,3 +15,4 @@ Sitio web de traducción a multiples idiomas hecho con React, TypeScript y Sass 
 - sass
 - semantic-ui-css
 - semantic-ui-react
+- sonner

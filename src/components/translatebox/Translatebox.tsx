@@ -7,6 +7,7 @@ import { IoMdClose } from "react-icons/io";
 
 import { TbLoader } from "react-icons/tb";
 import { MdTranslate } from "react-icons/md";
+import { Loader } from "../loader/Loader";
 
 const Translatebox: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -52,21 +53,11 @@ const Translatebox: React.FC = () => {
     SetText(e.target.value);
   };
   return (
-    <>
-      <form className="translate_form" onSubmit={handleSubmit}>
-      {isLoading ? (
-        <section className="dots-container">
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-          <div className="dot"></div>
-        </section>
-      ) : (
-        ""
-      )}
+    <form className="translate_form" onSubmit={handleSubmit}>
+      {isLoading && <Loader />}
       <div className="translate_box">
         <textarea
+          aria-label="text_area_translate"
           disabled={isLoading}
           placeholder="Agregar Texto"
           className="text_area_box"
@@ -76,11 +67,17 @@ const Translatebox: React.FC = () => {
         />
         <IoMdClose className="clean_text_area" onClick={CleanTextArea} />
         <button disabled={isLoading} className="translate_button" type="submit">
-          <p>{ isLoading ? <TbLoader className="loading_button" /> : <MdTranslate />}Traducir </p>
+          <p>
+            {isLoading ? (
+              <TbLoader className="loading_button" />
+            ) : (
+              <MdTranslate />
+            )}
+            Traducir
+          </p>
         </button>
-        </div>
-      </form>
-    </>
+      </div>
+    </form>
   );
 };
 

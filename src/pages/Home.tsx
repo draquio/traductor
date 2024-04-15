@@ -4,7 +4,8 @@ import { MenuLanguage } from "../components/menulanguage/MenuLanguage";
 import "./Home.scss";
 import { TranslateProvider } from "../context/TranslateProvider";
 import { LanguageProvider } from "../context/LanguageProvider";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "sonner";
 
 const Home: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
           <Translatebox />
           <Resultbox />
         </div>
+        <Toaster richColors/>
       </TranslateProvider>
     </LanguageProvider>
   );
