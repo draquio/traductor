@@ -15,5 +15,5 @@ export const LanguagesList = () => {
       getLanguage(data.value, "translation");
     }
   }
-  return <Dropdown placeholder="Idioma" fluid search selection className="clase_depruebaa" defaultValue='en' options={CountryListLanguages} onChange={SelectLanguage} />;
+  return <Dropdown placeholder="Idioma" className="dropdown_languages" fluid search selection defaultValue='en' options={CountryListLanguages} onChange={SelectLanguage} />;
 };

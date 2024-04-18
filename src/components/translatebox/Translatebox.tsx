@@ -14,10 +14,11 @@ const Translatebox: React.FC = () => {
   const { getTranslate } = useContext(TranslateContext);
   const { languageState } = useContext(LanguageContext);
   const language = languageState.lan;
-
   const [text, SetText] = useState("");
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if(!text) return;
     const translate = new Translate();
     setIsLoading(true);
     try {
@@ -31,8 +32,10 @@ const Translatebox: React.FC = () => {
   const handleKeyPress = async (
     e: React.KeyboardEvent<HTMLTextAreaElement>
   ) => {
+    
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
+      if(!text) return;
       const translate = new Translate();
       setIsLoading(true);
       try {
