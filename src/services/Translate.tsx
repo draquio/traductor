@@ -1,31 +1,33 @@
 import { ENV } from "../utils/constants";
 
 export class Translate {
-  async translatetext(texttotranslate: string, Language: string = "EN") {
-    const url = `${ENV.Api_url}/${ENV.Api_routes.translate}?to%5B0%5D=${Language}&api-version=3.0&profanityAction=NoAction&textType=plain`;
+  async translatetext(textToTranslate: string, Language: string = "en") {
+    const url = `${ENV.Api_url}`;
     const options: RequestInit = {
       method: "POST",
       headers: {
-        "content-type": "application/json",
         "X-RapidAPI-Key": ENV.Api_key,
         "X-RapidAPI-Host": ENV.Api_host,
+        'Content-Type': 'application/json'
       },
-      body: JSON.stringify([
+      body: JSON.stringify(
         {
-          Text: texttotranslate,
-        },
-      ]),
+          "from": "auto",
+          "to": Language,
+          "text": textToTranslate
+        }
+      ),
     };
-    try {
+    try { 
       const response = await fetch(url, options);
       const result = await response.text();
       const resultJson = JSON.parse(result);
-      if (resultJson[0].translations.length > 0) {
-        return resultJson[0].translations[0].text;
+      if (response.status === 200) {
+        return resultJson.trans;
       }
-      return "No se pudo traducir";
+      throw response;
     } catch (error) {
-      console.error(error);
+      throw new Error("No se pudo traducir");
     }
   }
 }

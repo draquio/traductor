@@ -18,5 +18,4 @@ export interface Props {
 export interface LanguageMock {
     acronym: string,
     name: string,
-    nativename: string,
 }

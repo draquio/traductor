@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import { TbLoader } from "react-icons/tb";
 import { MdTranslate } from "react-icons/md";
 import { Loader } from "../loader/Loader";
+import { toast } from "sonner";
 
 const Translatebox: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -18,7 +19,11 @@ const Translatebox: React.FC = () => {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if(!text) return;
+    handleTranslate();
+  };
+
+  const handleTranslate = async () => {
+    if (!text) return;
     const translate = new Translate();
     setIsLoading(true);
     try {
@@ -27,24 +32,19 @@ const Translatebox: React.FC = () => {
       setIsLoading(false);
     } catch (error) {
       console.error(error);
+      toast.error("Error al traducir!", {
+        duration: 4000,
+      });
+    } finally {
+      setIsLoading(false);
     }
   };
   const handleKeyPress = async (
     e: React.KeyboardEvent<HTMLTextAreaElement>
   ) => {
-    
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
-      if(!text) return;
-      const translate = new Translate();
-      setIsLoading(true);
-      try {
-        const response = await translate.translatetext(text, language);
-        getTranslate(response);
-        setIsLoading(false);
-      } catch (error) {
-        console.error(error);
-      }
+      handleTranslate();
     }
   };
 
